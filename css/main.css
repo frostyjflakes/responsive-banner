@@ -1,6 +1,5 @@
 html {
-  font-family: Georgia;
-  background-color: #495562;
+  font-family: Georgia, serif;
   color: #fff;
 }
 
@@ -15,6 +14,31 @@ html {
   border-color: #efefef;
 }
 
-img {
-  background-image: linear-gradient(to bottom, rgba(73, 85, 98, .9), url("../images/earth-horizon.jpg");
+.banner {
+  background-color: #495562;
+  color: #fff;
+}
+
+.banner-button {
+  text-align: left;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .banner {
+    position: relative;
+    overflow: hidden;
+    max-height: 500px;
+  }
+
+  .banner-image {
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(73, 85, 98, .3), rgba(73, 85, 98, .9));
+  }
+
+  .banner-button {
+    text-align: right;
+  }
+
 }
